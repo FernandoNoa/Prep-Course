@@ -284,15 +284,14 @@ function esVocal(letra){
   var cantidad = letra.length; 
 
   if(cantidad == 1){
-    if(letra == 'a'||'e'||'i'||'o'||'u'){
-      return ('Es vocal');
-    } 
-    if(letra != 'a'||'e'||'i'||'o'||'u'){
-      return ("Dato incorrecto");
-    }
+    if(letra == 'a'||letra == 'e'||letra == 'i'||letra == 'o'||letra == 'u'){
+      return ('Es vocal')
+      } else{
+          return ('Dato incorrecto')
+        }
   }
   if(cantidad > 1){
-    return ("Dato incorrecto");
+    return ('Dato incorrecto');
 
   }
 
