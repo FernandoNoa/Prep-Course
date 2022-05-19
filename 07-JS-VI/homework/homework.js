@@ -59,7 +59,7 @@ function filter(array) {
   var palabras = array.filter(function(elemento){
     return elemento.charAt(0) == 'a';
   });
-  return palabras;
+  return palabras
 }
 
 // No modificar nada debajo de esta línea
