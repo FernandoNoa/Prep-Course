@@ -37,31 +37,30 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var z = x + y;
-  return (z);
+   return x + y;
+  
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var a = x - y;
-  return (a);
+  return x - y;
+  
   
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var d = x * y;
-  return (d);
+  return  x * y;
+
   
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var p = x / y;
-  return (p);
+  return x / y;
   
 }
 
@@ -85,9 +84,8 @@ function tienenMismaLongitud(str1, str2) {
   
   if(str1.length==str2.length){
     return true;
-  } else{
-    return false;
-  }
+  } 
+  return false;
 }
 
 function menosQueNoventa(num) {
@@ -117,7 +115,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return (x%y);
+  return x%y;
   
 }
 
@@ -151,8 +149,8 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var num = num **2;
-  return num;
+  return num **2;
+  
   
 }
 
@@ -166,36 +164,31 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var numero = num ** exponent;
-  return numero;
+  return num ** exponent;
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var prox = Math.round(num);
-  return prox;
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var arriba = Math.ceil(num);
-  return arriba;
+  return Math.ceil(num);
   
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var min = 0;
-  var max = 1;
-
-  var aleatorio = Math.random()*(max-min)+min;
-  return aleatorio;
-
+  
+  return Math.random(); 
+  
 }
+
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -203,24 +196,18 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   var x = Math.sign(numero);
-  if(x==1){
-    return("Es positivo");
-  }
-  if(x==-1){
-    return("Es negativo");
-  }
-  if(numero == 0){
-    return false;
-  }
-  
+  if(x==1) return("Es positivo");
+  if(x==-1) return("Es negativo");
+  if(numero == 0) return false;
+
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var x = str + '!';
-  return x;
+  return str + '!';
+
 }
 
 function combinarNombres(nombre, apellido) {
@@ -242,8 +229,7 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var v = alto * ancho;
-  return v;
+  return alto * ancho;
   
 }
 
@@ -251,8 +237,8 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var c = lado * 4;
-  return c;
+  return lado * 4;
+  
   
 }
 
@@ -260,8 +246,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var t = (base*altura)/2;
-  return t;
+  return (base*altura)/2;
 
 }
 
@@ -270,8 +255,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var dolares = euro*1.20;
-  return dolares;
+  return euro*1.20;
 }
 
 
